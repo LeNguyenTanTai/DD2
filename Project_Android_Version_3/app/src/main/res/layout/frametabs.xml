@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#3B3838">
+  <!--Header-->
+  <!--Line banner top-->
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="30dp"
+      android:background="@drawable/about_background_effect"></LinearLayout>
+  <!--nav tabs-->
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="40dp"
+      android:orientation="horizontal"
+      android:background="#3B3838"
+      android:elevation="5dp"
+      android:paddingTop="2dp"
+      android:paddingBottom="2dp">
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/mainTab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabGravity="fill"
+        app:tabIndicatorColor="#03FFD9"
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="#F3F1F1"
+        app:tabTextColor="#746F6F" />
+  </LinearLayout>
+
+
+  <!--Line and button menu -->
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="100dp"
+      android:orientation="vertical"
+      android:background="@drawable/header_tabs_effect"
+      android:gravity="center"
+      android:paddingLeft="10dp"
+      android:paddingRight="10dp">
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_menu_effect"
+        android:layout_gravity="left"
+        android:layout_marginBottom="10dp"/>
+  </LinearLayout>
+  <!--// Header-->
+
+  <!--Main -->
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_weight="1"
+      android:paddingLeft="40dp"
+      android:paddingRight="40dp"
+      android:paddingBottom="10dp"
+      android:paddingTop="10dp"
+      android:orientation="vertical">
+    <!--List item-->
+
+    <!--Thay đổi nội dung tại đây-->
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/mainViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    </android.support.v4.view.ViewPager>
+
+
+  </LinearLayout>
+  <!-- // Main-->
+
+  <!--footer-->
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="100dp"
+      android:layout_gravity="center|bottom"
+      android:background="@drawable/footer_tabs_effect"
+      android:elevation="5dp"
+      android:rotation="180"
+      android:translationZ="10dp"
+      android:layout_marginBottom="0dp"
+      android:padding="10dp"
+      >
+
+  </LinearLayout>
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="100dp"
+      android:elevation="15dp"
+      android:layout_gravity="bottom"
+      android:gravity="right"
+      android:background="@drawable/about_background_effect"
+      android:layout_marginBottom="-20dp"
+      android:paddingRight="10dp">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/logo_effect"/>
+  </LinearLayout>
+</LinearLayout>

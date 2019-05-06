@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3B3838"
+    android:layout_margin="0dp"
+    android:padding="0dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <!--header-->
+    <FrameLayout
+        android:id="@+id/fmheader"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/header_background_effect"
+        android:elevation="10dp"
+        android:translationZ="10dp"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="-30dp"
+        android:padding="10dp">
+
+    </FrameLayout>
+
+    <!--Frame Content-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/shadow_framecontent"
+        android:orientation="vertical"
+        android:elevation="25dp"
+        android:layout_margin="35dp"
+        android:padding="15dp">
+        <!--Header-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <!--Bar-->
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="25dp"
+                android:backgroundTint="#fd0150"
+                android:background="@drawable/menu"
+                />
+            <!--Name song-->
+            <TextView
+                android:id="@+id/tvTitleName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lời nói hôm qua"
+                android:textColor="#a6a6a6"
+                android:textSize="18dp"
+                android:gravity="center"
+                />
+        </LinearLayout>
+        <!--// Header-->
+
+        <!--Main-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:orientation="vertical">
+            <pl.droidsonroids.gif.GifImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/a"
+                android:background="@drawable/a"
+                android:layout_gravity="center"
+                />
+
+            <!--text time-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvTimeStart"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="00:00"
+                    android:textColor="#fff"
+                    android:textSize="15dp"
+                    android:gravity="left"
+                    />
+                <TextView
+                    android:id="@+id/tvTimeEnd"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="03:50"
+                    android:textColor="#fff"
+                    android:textSize="15dp"
+                    android:gravity="right"
+
+                    />
+            </LinearLayout>
+            <!--// text time-->
+
+            <!--line time-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <SeekBar
+                    android:id="@+id/sbTimeLine"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <!--// line time-->
+
+            <!--list item-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="5"
+                android:orientation="vertical">
+                <android.support.v7.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/recycler_view">
+                </android.support.v7.widget.RecyclerView>
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <!--// Main-->
+
+        <!--Footer-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:gravity="center"
+            android:orientation="horizontal">
+            <!--Prev-->
+            <ImageButton
+                android:id="@+id/ibtnPrev"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/left"
+                android:layout_gravity="center"
+                android:backgroundTint="#7C7575"/>
+            <!--Play-->
+            <ImageButton
+                android:id="@+id/ibtnPlay"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/play"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:backgroundTint="#FD0166"/>
+            <!--Next-->
+            <ImageButton
+                android:id="@+id/ibtnNext"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/right"
+                android:layout_gravity="center"
+                android:backgroundTint="#7C7575"/>
+        </LinearLayout>
+        <!--// Footer-->
+
+    </LinearLayout>
+
+    <!--footer-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_gravity="center|bottom"
+        android:background="@drawable/footer_background_effect"
+        android:elevation="10dp"
+        android:rotation="180"
+        android:translationZ="10dp"
+        android:layout_marginBottom="-30dp"
+        >
+
+    </FrameLayout>
+</FrameLayout>

@@ -1,0 +1,767 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3B3838"
+    android:layout_margin="0dp"
+    android:padding="0dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <!--About-->
+    <FrameLayout
+        android:id="@+id/fmAbout"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:elevation="10dp"
+        android:translationZ="10dp"
+        android:layout_gravity="center|top"
+        android:padding="10dp"
+        android:background="@drawable/about_background_effect"
+        android:translationY="-300dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nhóm T-L"
+            android:layout_gravity="center|top"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:textSize="20dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="left"
+            android:textColor="#BEAEAE"
+            android:text="
+            Số lượng thành viên: 2\n
+            Trần Thị Lam - 16211TT3000\n
+            Lê Nguyễn Tấn Tài - 16211TT1221
+
+
+
+
+
+            "
+
+            />
+    </FrameLayout>
+    <!--header-->
+    <FrameLayout
+        android:id="@+id/fmheader"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/header_background_effect"
+        android:elevation="10dp"
+        android:translationZ="10dp"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="-30dp"
+        android:padding="10dp">
+        <!--Title-->
+        <TextView
+            android:id="@+id/tvHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trang chủ"
+            android:textColor="#fff"
+            android:layout_gravity="center"
+            android:layout_marginBottom="35dp"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            />
+        <!--Button-->
+        <ImageButton
+            android:id="@+id/imgAbout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|left"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/button_menu_effect" />
+        <!--Button-->
+        <ImageButton
+            android:id="@+id/btnSearch"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/search"
+            android:layout_gravity="center|right"
+            android:layout_marginBottom="40dp"
+            android:backgroundTint="#fff"/>
+
+
+    </FrameLayout>
+
+    <!--main-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:elevation="2dp"
+            android:scrollbars="none"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:elevation="2dp">
+
+
+                <!--Top 3-->
+                <LinearLayout
+                    android:id="@+id/lnTopThree"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="190dp"
+                    android:gravity="center">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="265dp"
+                        android:layout_gravity="center"
+                        android:foregroundGravity="center">
+                        <!--<-->
+                        <ImageButton
+                            android:id="@+id/imgPrev"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/lefta"
+                            android:elevation="11dp"
+                            android:translationZ="2dp"
+                            android:layout_gravity="center"
+                            android:translationX="-100dp"
+                            android:translationY="20dp"
+                            android:backgroundTint="#fff"/>
+
+                        <!-->-->
+                        <ImageButton
+                            android:id="@+id/imgNext"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/righta"
+                            android:elevation="11dp"
+                            android:translationZ="2dp"
+                            android:layout_gravity="center"
+                            android:translationX="100dp"
+                            android:translationY="20dp"
+                            android:backgroundTint="#fff"/>
+                        <!--Question-->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingRight="10dp"
+                            android:paddingLeft="10dp"
+                            android:textStyle="italic"
+                            android:text="Có thể bạn thích !!!"
+                            android:textColor="#fff"
+                            android:layout_gravity="top|right"/>
+                        <ImageView
+                            android:id="@+id/img2"
+                            android:layout_width="150dp"
+                            android:layout_height="200dp"
+                            android:background="@drawable/codon"
+                            android:elevation="1dp"
+                            android:layout_gravity="center"
+                            android:foregroundGravity="center"
+                            android:translationX="70dp"
+                            android:layout_marginTop="20dp"
+                            />
+                        <ImageView
+                            android:id="@+id/img1"
+                            android:layout_width="150dp"
+                            android:layout_height="200dp"
+                            android:background="@drawable/camgiac"
+                            android:elevation="2dp"
+                            android:translationZ="10dp"
+                            android:layout_gravity="center"
+                            android:foregroundGravity="center"
+                            android:layout_marginTop="20dp"
+                            android:scaleX="1.1"
+                            android:scaleY="1.1"/>
+
+                        <ImageView
+                            android:id="@+id/img3"
+                            android:layout_width="150dp"
+                            android:layout_height="200dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/hongnhan"
+                            android:elevation="1dp"
+                            android:foregroundGravity="center"
+                            android:translationX="-70dp" />
+                    </FrameLayout>
+                </LinearLayout>
+
+
+                <!--Bài hát-->
+                <!--Title-->
+                <LinearLayout
+                    android:id="@+id/lnTitleBaiHat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="30dp">
+                    <!--Tiêu đề-->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Bài hát mới: "
+                        android:textColor="#C7BFBF"
+                        android:textSize="18dp"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="left"
+                        android:textStyle="bold"/>
+                    <!--button xem tất cả-->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textStyle="italic"
+                        android:textColor="#C7BFBF"
+                        android:textSize="18dp"
+                        android:drawableRight="@drawable/playlist"
+                        android:drawableTint="@color/cardview_light_background"
+                        android:text="Nghe tất cả  "
+                        android:layout_marginRight="10dp"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="right|center"
+                        />
+
+                </LinearLayout>
+                <!--Danh sách item bài hát (tạm để = recyclerview)-->
+                <LinearLayout
+                    android:id="@+id/lnDanhSachBaiHat"
+                    android:layout_marginTop="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/recycler_view">
+                    </android.support.v7.widget.RecyclerView>
+
+                    <!--<android.support.v7.widget.CardView-->
+                    <!--android:layout_width="150dp"-->
+                    <!--android:layout_height="120dp"-->
+                    <!--android:translationZ="5dp"-->
+                    <!--app:cardCornerRadius="15dp"-->
+                    <!--app:cardElevation="2dp"-->
+                    <!--app:cardUseCompatPadding="true">-->
+                    <!--<FrameLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent">-->
+                    <!--<ImageView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:background="@drawable/bnner"-->
+                    <!--android:alpha="0.8"/>-->
+                    <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:text="Thu cuối"-->
+                    <!--android:textColor="#fff"-->
+                    <!--android:textSize="14dp"-->
+                    <!--android:textStyle="bold"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:gravity="center"/>-->
+                    <!--</FrameLayout>-->
+                    <!--</android.support.v7.widget.CardView>-->
+
+
+
+                </LinearLayout>
+                <!--// Bài hát-->
+
+                <!--Chủ đề - Thể loại -->
+                <!--Tiêu đề-->
+                <TextView
+                    android:layout_marginTop="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Thể loại: "
+                    android:textColor="#C7BFBF"
+                    android:textSize="18dp"
+                    android:layout_marginLeft="10dp"
+                    android:textStyle="bold"/>
+                <!--Danh sách thể loại-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <!--1 - 2 -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+                        <!--Nhạc trẻ-->
+                        <android.support.v7.widget.CardView
+                            android:layout_width="150dp"
+                            android:layout_height="100dp"
+                            android:layout_weight="1"
+                            android:translationZ="2dp"
+                            app:cardCornerRadius="5dp"
+                            app:cardElevation="2dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            app:cardUseCompatPadding="true"
+                            android:id="@+id/cardNhacTre">
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/nhactre"/>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="Nhạc trẻ"
+                                    android:textColor="#E9E3E3"
+                                    android:textSize="15dp"
+                                    android:gravity="center"/>
+                            </FrameLayout>
+
+                        </android.support.v7.widget.CardView>
+
+                        <!--Kpop-->
+                        <android.support.v7.widget.CardView
+                            android:layout_width="150dp"
+                            android:layout_height="100dp"
+                            android:layout_weight="1"
+                            android:translationZ="2dp"
+                            app:cardCornerRadius="5dp"
+                            app:cardElevation="2dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            app:cardUseCompatPadding="true"
+                            android:id="@+id/cardKpop">
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/kpop"/>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="Nhạc Kpop"
+                                    android:textColor="#E9E3E3"
+                                    android:textSize="15dp"
+                                    android:gravity="center"/>
+                            </FrameLayout>
+
+                        </android.support.v7.widget.CardView>
+                    </LinearLayout>
+
+                    <!--3 - 4-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <!--Au my -->
+                        <android.support.v7.widget.CardView
+                            android:layout_width="150dp"
+                            android:layout_height="100dp"
+                            android:layout_weight="1"
+                            android:translationZ="2dp"
+                            app:cardCornerRadius="5dp"
+                            app:cardElevation="2dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            app:cardUseCompatPadding="true"
+                            android:id="@+id/cardAuMy">
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/aumy"/>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="Âu mỹ"
+                                    android:textColor="#E9E3E3"
+                                    android:textSize="15dp"
+                                    android:gravity="center"/>
+                            </FrameLayout>
+
+                        </android.support.v7.widget.CardView>
+
+                        <!--Nhạc EDM-->
+                        <android.support.v7.widget.CardView
+                            android:layout_width="150dp"
+                            android:layout_height="100dp"
+                            android:layout_weight="1"
+                            android:translationZ="2dp"
+                            app:cardCornerRadius="5dp"
+                            app:cardElevation="2dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            app:cardUseCompatPadding="true"
+                            android:id="@+id/cardEDM">
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/edm"/>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="Nhạc EDM"
+                                    android:textColor="#E9E3E3"
+                                    android:textSize="15dp"
+                                    android:gravity="center"/>
+                            </FrameLayout>
+
+                        </android.support.v7.widget.CardView>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <!--// Chủ đề - Thể loại-->
+
+                <!--Video-->
+                <!--Tiêu đề-->
+                <TextView
+                    android:layout_marginTop="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="MV - Video: "
+                    android:textColor="#C7BFBF"
+                    android:textSize="18dp"
+                    android:layout_marginLeft="10dp"
+                    android:textStyle="bold"/>
+                <!--Danh sách video-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="210dp"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="30dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+                    <!--Video main-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:translationZ="2dp"
+                            app:cardCornerRadius="5dp"
+                            app:cardElevation="2dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            app:cardUseCompatPadding="true">
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/videoone">
+                                <!--<VideoView-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_height="match_parent"-->
+                                <!--android:id="@+id/videoView"/>-->
+
+                            </FrameLayout>
+
+                        </android.support.v7.widget.CardView>
+                    </LinearLayout>
+
+                    <!--Video support-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_weight="2"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <!--1-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginBottom="10dp">
+                            <android.support.v7.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:translationZ="2dp"
+                                app:cardCornerRadius="5dp"
+                                app:cardElevation="2dp"
+                                app:cardUseCompatPadding="true">
+                                <FrameLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/videotwo">
+                                    <!--<VideoView-->
+                                    <!--android:layout_width="match_parent"-->
+                                    <!--android:layout_height="match_parent"-->
+                                    <!--android:id="@+id/videoViewSPO"/>-->
+
+                                </FrameLayout>
+
+                            </android.support.v7.widget.CardView>
+                        </LinearLayout>
+                        <!--2-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp">
+                            <android.support.v7.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:translationZ="2dp"
+                                app:cardCornerRadius="5dp"
+                                app:cardElevation="2dp"
+                                app:cardUseCompatPadding="true">
+                                <FrameLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/videothree">
+                                    <!--<VideoView-->
+                                    <!--android:layout_width="match_parent"-->
+                                    <!--android:layout_height="match_parent"-->
+                                    <!--android:id="@+id/videoViewSPT"/>-->
+
+                                </FrameLayout>
+
+                            </android.support.v7.widget.CardView>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+                <!--// Video-->
+
+                <!--List Bai Hat-->
+                <!--tiêu đề-->
+                <TextView
+                    android:layout_marginTop="25dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Danh sách bài hát: "
+                    android:textColor="#C7BFBF"
+                    android:textSize="18dp"
+                    android:layout_marginLeft="10dp"
+                    android:textStyle="bold"/>
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="25dp"
+                    android:layout_marginBottom="50dp">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        >
+                        <!--Nội dung-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:orientation="horizontal"
+                            android:background="#39000000">
+                            <TextView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:text="1"
+                                android:textColor="#fff"
+                                android:layout_gravity="center"
+                                android:gravity="center"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Chiếc khăn gió ấm"
+                                android:textColor="#fff"
+                                android:layout_gravity="left"
+                                android:gravity="center"/>
+                        </LinearLayout>
+
+                        <!--Hình ảnh-->
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            app:cardCornerRadius="35dp"
+                            app:cardElevation="2dp"
+                            android:translationZ="2dp"
+                            android:layout_centerHorizontal="true"
+                            android:innerRadius="0dp"
+                            android:shape="ring"
+                            android:thicknessRatio="1.9"
+                            android:layout_marginLeft="40dp"
+                            >
+                            <ImageView
+                                android:layout_width="70dp"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentTop="true"
+                                android:layout_centerHorizontal="true"
+                                android:background="@drawable/edm"/>
+                        </android.support.v7.widget.CardView>
+
+
+
+                    </FrameLayout>
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        >
+                        <!--Nội dung-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:orientation="horizontal"
+                            android:background="#39000000">
+                            <TextView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:text="1"
+                                android:textColor="#fff"
+                                android:layout_gravity="center"
+                                android:gravity="center"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Chiếc khăn gió ấm"
+                                android:textColor="#fff"
+                                android:layout_gravity="left"
+                                android:gravity="center"/>
+                        </LinearLayout>
+
+                        <!--Hình ảnh-->
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            app:cardCornerRadius="35dp"
+                            app:cardElevation="2dp"
+                            android:translationZ="2dp"
+                            android:layout_centerHorizontal="true"
+                            android:innerRadius="0dp"
+                            android:shape="ring"
+                            android:thicknessRatio="1.9"
+                            android:layout_marginLeft="40dp"
+                            >
+                            <ImageView
+                                android:layout_width="70dp"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentTop="true"
+                                android:layout_centerHorizontal="true"
+                                android:background="@drawable/edm"/>
+                        </android.support.v7.widget.CardView>
+
+
+
+                    </FrameLayout>
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        >
+                        <!--Nội dung-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:orientation="horizontal"
+                            android:background="#39000000">
+                            <TextView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:text="1"
+                                android:textColor="#fff"
+                                android:layout_gravity="center"
+                                android:gravity="center"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Chiếc khăn gió ấm"
+                                android:textColor="#fff"
+                                android:layout_gravity="left"
+                                android:gravity="center"/>
+                        </LinearLayout>
+
+                        <!--Hình ảnh-->
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            app:cardCornerRadius="35dp"
+                            app:cardElevation="2dp"
+                            android:translationZ="2dp"
+                            android:layout_centerHorizontal="true"
+                            android:innerRadius="0dp"
+                            android:shape="ring"
+                            android:thicknessRatio="1.9"
+                            android:layout_marginLeft="40dp"
+                            >
+                            <ImageView
+                                android:layout_width="70dp"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentTop="true"
+                                android:layout_centerHorizontal="true"
+                                android:background="@drawable/edm"/>
+                        </android.support.v7.widget.CardView>
+
+
+
+                    </FrameLayout>
+
+                </LinearLayout>
+                <!--// List Bai Hat-->
+
+
+
+
+            </LinearLayout>
+        </ScrollView>
+
+
+    </FrameLayout>
+
+    <!--footer-->
+    <!--<FrameLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="200dp"-->
+    <!--android:background="@drawable/footer_background_effect"-->
+    <!--android:elevation="10dp"-->
+    <!--android:translationZ="10dp"-->
+    <!--android:layout_gravity="center|bottom"-->
+    <!--android:rotation="180"-->
+    <!--android:layout_marginBottom="-90dp">-->
+
+    <!--</FrameLayout>-->
+
+    <!--footer-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/rsz_footer"
+        android:elevation="1dp"
+        >
+
+    </FrameLayout>
+</FrameLayout>
